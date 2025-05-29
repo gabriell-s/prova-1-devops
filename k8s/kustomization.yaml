@@ -6,4 +6,4 @@ resources:
 images:
 - name: prova-1-devops
   newName: gbrlls/prova-1-devops
-  newTag: 35fb77f9cfaf0f70e8040977e98975bc651112d2
+  newTag: 8d55f146439ea840d673a983274ea73b1db9dee2
