@@ -35,8 +35,8 @@ jobs:
           context: .
           push: true
           tags: |
-            prova-1-devopslatest
-            prova-1-devops${{ github.sha }}
+            gbrlls/prova-1-devops:latest
+            gbrlls/prova-1-devops:${{ github.sha }}
 
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v2
@@ -44,7 +44,7 @@ jobs:
       - name: Update kustomization.yaml
         run: |
           cd k8s
-          kustomize edit set image prova-1-devops=prova-1-devops:$GITHUB_SHA
+          kustomize edit set image prova-1-devops=gbrlls/prova-1-devops:$GITHUB_SHA
 
       - name: Commit changes
         run: |

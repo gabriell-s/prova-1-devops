@@ -5,5 +5,5 @@ resources:
 - service.yaml
 images:
 - name: prova-1-devops
-  newName: prova-1-devops
+  newName: gbrlls/prova-1-devops
   newTag: d61f04e81b3dca0a7ec63bb5ba03f82ade2e0a33
